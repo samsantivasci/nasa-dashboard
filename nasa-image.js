@@ -4,8 +4,8 @@ export class NasaImage extends LitElement {
 
   constructor() {
     super();
-    this.title = '';
-    this.source = '';
+    this.title = "moon";
+    this.source = "hello";
   }
 
   static get properties() {
@@ -40,10 +40,10 @@ export class NasaImage extends LitElement {
 
   render() {
     return html`
-    <div class="image">
-        <img src="${this.source}" />
+    <a  class="image" href${this.source}>
+      <img src= "${this.source}" style ="width: 240px" alt= "${this.title}">
         <div>${this.title}</div>
-    </div>
+    </a>
     `;
   }
   static get tag() {

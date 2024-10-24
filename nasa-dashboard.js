@@ -12,7 +12,8 @@ import { I18NMixin } from "@haxtheweb/i18n-manager/lib/I18NMixin.js";
  * @demo index.html
  * @element nasa-dashboard
  */
-export class NasaSearch extends LitElement {
+import "./nasa-image.js";
+export class NasaSearch extends DDDSuper(LitElement) {
   static get properties() {
     return {
       title: { type: String },
@@ -21,7 +22,6 @@ export class NasaSearch extends LitElement {
       value: { type: String },
     };
   }
-
   static get styles() {
     return css`
       :host {

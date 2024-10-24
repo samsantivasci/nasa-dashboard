@@ -81,6 +81,7 @@ export class NasaSearch extends DDDSuper(LitElement) {
       <nasa-image
         source="${item.links[0].href}"
         title="${item.data[0].title}"
+        owner="${item.data[0].secondary_creator}"
       ></nasa-image>
       `)}
     </div>

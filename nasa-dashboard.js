@@ -41,18 +41,18 @@ export class NasaSearch extends DDDSuper(LitElement) {
       }
 
       details {
-        margin: 16px;
+        margin: var(--ddd-spacing-8) 0 var(--ddd-spacing-4);
         padding: 16px;
-        background-color: blue;
+        background-color: var(--ddd-theme-default-link80);
       }
       summary {
-        font-size: 24px;
+        font-size: var(--ddd-font-size-s);
         padding: 8px;
-        color: white;
-        font-size: 42px;
+        color: var(--ddd-theme-default-white85);
+        font-size: var(--ddd-font-size-l);
       }
       input {
-        font-size: 20px;
+        font-size: var(--ddd-font-size-xxs);
         line-height: 40px;
         width: 100%;
       }
